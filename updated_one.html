@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de MALEK ZAGOUB</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #18bc9c;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 3px solid #18bc9c;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        #about {
+            background-color: #ecf0f1;
+        }
+
+        #projects {
+            background-color: #bdc3c7;
+        }
+
+        #skills,
+        #services {
+            background-color: #ecf0f1;
+        }
+
+        #contact {
+            background-color: #5686b6;
+            color: white;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .skills,
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .skill,
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill:hover,
+        .service:hover {
+            background-color: #18bc9c;
+            color: white;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .skills,
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill,
+            .service {
+                width: 90%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MALEK ZAGOUB</h1>
+        <p>Responsable Marketing et Technique de Vente</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos de moi</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis ravie de partager avec vous mon parcours en tant que Responsable Marketing et Technique de Vente.
+            Grâce à plusieurs stages efficaces et concluants , j'ai développé une expertise approfondie en stratégie
+            marketing, développement commercial et gestion d'équipes performantes.</p>
+
+        <b>Mon objectif est de continuer à repousser les limites en matière de marketing et de technique de vente, en
+            apportant des solutions innovantes qui génèrent de la croissance durable pour les entreprises.</b>
+        <p>#Marketing #Ventes #BusinessDevelopment #Stratégie #Leadership #Innovation</p>
+    </section>
+
+    <section id="projects">
+        <h2>Experiences</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3 style="display: flex; align-items: center;">
+                    Représentant technico-commercial Chez :<b> </b>
+                    <img src="./mliha.jpg" alt="MLIHA" style="width: 5%; height: auto; margin-left: 10px;">
+                    <h4>Projet de fin d'étude : Évaluation du système de réclamation</h4>
+                    <p> <b>Objectif du Projet : </b>
+                        l 'objectif de ce projet est de fournir des solutions techniques innovantes qui répondent aux
+                        défis
+                        spécifiques de chaque client, tout en contribuant activement à la croissance et à la réussite de
+                        mon
+                        entreprise.
+                    </p>
+                    <p> <b>Responsabilités principales : </b> </p>
+                    <p> - #Expertise technique : Maîtrise approfondie des produits et services, capable d'expliquer avec
+                        clarté
+                        les aspects techniques complexes aux clients potentiels et existants.</p>
+                    <p> -
+                        #Développement commercial : Identification proactive des opportunités de marché, acquisition de
+                        nouveaux
+                        clients et construction de relations solides à long terme.
+                    </p>
+                    <p> -#Négociation et gestion des ventes : Élaboration de propositions commerciales adaptées,
+                        négociation des
+                        contrats et gestion efficace du cycle de vente jusqu'à la conclusion.</p>
+
+
+                </h3>
+            </div>
+            <div class="project">
+                <h3 style="display: flex; align-items: center;">
+                    Représentant technico-commercial Chez :<b> </b>
+                    <img src="./ghd.png" alt="GHD" style="width: 5%; height: auto; margin-left: 10px;">
+                </h3>
+                <p>
+                    - Assurer la vente efficace de produits techniques en fournissant un soutien technique approfondi
+                    aux
+                    clients et en garantissant la qualité du processus de vente.
+                </p>
+                <p>
+                    - Support client : Offre d'un support technique continu pour garantir la satisfaction client et
+                    résoudre les problèmes techniques de manière proactive.</p>
+            </div>
+            <!-- Ajoutez d'autres projets ici -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Marketing Digital</h3>
+                <p>SEO, SEM, Content Marketing, etc.</p>
+            </div>
+            <div class="skill">
+                <h3>Technique de Vente</h3>
+                <p>Négociation, Stratégie de vente, CRM, etc.</p>
+            </div>
+            <div class="skill">
+                <h3>Marketing Digital</h3>
+                <p>SEO, SEM, Content Marketing, etc.</p>
+            </div>
+            <div class="skill">
+                <h3>Support client</h3>
+                <p>Présentation, Coordination,Analyse etc.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <p>Je propose des services tels que :</p>
+        <ul>
+            <b>
+                <li>Utilisation d’outils d'analyse pour interpréter les tendances du marché et ajuster les stratégies en
+                    temps réel.</li>
+            </b>
+            <b>
+                <li>Consultation en stratégie marketing</li>
+            </b>
+            <b>
+                <li> Élaboration de techniques de vente innovantes, optimisation des processus de vente et renforcement
+                    de la fidélisation client.</li>
+            </b>
+            <b>
+                <li> Conception et mise en œuvre de stratégies marketing multicanal, orientées sur les résultats et
+                    adaptées aux besoins du marché</li>
+            </b>
+            <!-- Ajoute d'autres services spécifiques -->
+        </ul>
+    </section>
+    <!-- <section id="services">
+    <h2>Services</h2>
+    <div class="services-list">
+        <div class="service">
+            <h3>Consultation en stratÃ©gie marketing</h3>
+            <p>[Description du service]</p>
+        </div>
+        <div class="service">
+            <h3>Formation en technique de vente</h3>
+            <p>[Description du service]</p>
+        </div>
+        <!-- Ajoutez d'autres services ici -->
+    </div>
+    </section> -->
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter via :</p>
+        <ul>
+            <li>Email : <a href="mailto:zagoubmalek2@gamil.com">zagoubmalek2@gamil.com</a></li>
+            <li>Téléphone : +216 54 158 740</li>
+            <li>LinkedIn : <a href="https://www.linkedin.com/in/malek-zagoub-722406319" target="_blank">Mon profil
+                    LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MALEK ZAGOUB. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
